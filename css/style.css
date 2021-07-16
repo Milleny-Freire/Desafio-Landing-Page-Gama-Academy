@@ -1,91 +1,74 @@
 *{
     margin: 0;/*removida a margem*/
     padding: 0;/*removido o padding*/
-
 }
 
 html{
     scroll-behavior: smooth; /*referenciar as sections, criando um efeito mais fluido*/
 }
-
-h1{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 90px;
-    justify-content: center;
-    align-items: center;
-    vertical-align: top;
-    top: 100%;
-    margin-top: -2px;
-    color: white;
-  
 }
-.tamanho{
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 60px;
-    justify-content: center;
-    align-items: center;
-    vertical-align: top;
-    top: 100%;
-    margin-top: -2px;
-    color: #000;
-}
-
-p{
-    vertical-align: top;
-}
-.container {
+header {
+    height: 150px;
     width: 100%;
-    display: flex;
-    justify-content:right; /* centralizar os itens*/
-    align-items: center; /*alinah ao centro tbm*/
-}
-.logotipo {
-    height: 30vh; /* pega toda a altura da página*/
-    background-image: url(../assets/fundoblack.jpg); /*insere uma imagem de fundo*/
-    background-size: cover; /*manter a imagem em um formato e não em vários formatos pequenos*/
-    background-attachment: fixed; /*mantem o fundo background parado mesmo que mova a tela*/
-    background-repeat: no-repeat;
-}
-.caixaemail{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-color: #333;
 }
 
-.section-container-two{
-    height: 65vh; /* pega toda a altura da página*/
-    width: 100%;
-    display: flex;
-    justify-content: center; /* centralizar os itens*/
-    align-items: center; /*alinha ao centro tbm*/
-}
-
-.section-container-three{
-    height: 100vh; /* pega toda a altura da página*/
-    width: 100%;
-    display: flex;
-    justify-content: center; /* centralizar os itens*/
-    align-items: center; /*alinah ao centro tbm*/
-    text-align: center;
-}
-
-
-
-.background-section-two {
+.backgroundRed {
     background-image: url(../assets/fundovermelho.jpg); /*insere uma imagem de fundo*/
     background-size: cover; /*manter a imagem em um formato e não em vários formatos pequenos*/
     background-attachment: fixed; /*mantem o fundo background parado mesmo que mova a tela*/
     background-repeat: no-repeat;
 }
 
-.background-section-three {
+
+h1{
+    font-size: 90px;
+    color: white; 
+}
+.center {
+    text-align:center;
+}
+.textInfo{
+    font-size: 50px;
+    color: #000;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.grid-container {
+    display: grid;
+    width: 800px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grit-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+article { /*borda das bolsas*/
+    border: 0.5rem outset #000;
+    border-radius: 20px;
+    font: bold 1rem sans-serif;
+    margin: 50px;
+    padding: 0.5rem 0.5rem;
+    outline-offset: 10rem;
+    display: inline-table;
+}
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+.backgroundBlack {
     background-image: url(../assets/fundopretodetalhevermelho.jpg); /*insere uma imagem de fundo*/
     background-size: cover; /*manter a imagem em um formato e não em vários formatos pequenos*/
     background-attachment: fixed; /*mantem o fundo background parado mesmo que mova a tela*/
     background-repeat: no-repeat;
-    display: grid;
-    justify-content: center; /* centralizar os itens*/
-    align-items: center; /*alinha ao centro tbm*/
+    height: 100vh;
 }
 
 .card-container{
@@ -94,6 +77,11 @@ p{
     border-radius: 25px;
     padding: 25px;
     max-width: 300px;
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   input{
@@ -112,33 +100,6 @@ form{
 footer{
     height: 160px;
     padding: 25px;
-    text-align: center;
     background-color: #000;
     color: white;
-}
-
- /*Caixa de quantidade de bolsas da página*/ 
-legend {
-    background-color: #000;
-    color: #fff;
-    padding: 3px 6px;
-}
-
-.output {
-    font: 1rem 'Fira Sans', sans-serif;
-}
-
-
-div { /*borda das bolsas*/
-    border: 0.5rem outset #000;
-    border-radius: 20px;
-    font: bold 1rem sans-serif;
-    margin: 50px;
-    padding: 0.5rem 0.5rem;
-    outline-offset: 10rem;
-    width: 1px;
-    height: 1px;
-    display: inline-block;
-    display: inline-table;
-        
 }
